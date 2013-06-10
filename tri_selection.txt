@@ -1,0 +1,12 @@
+Fonction tri_selection(tableau t)
+  n = taille(t)
+  Pour i de 1 à n-1
+    min = i
+    Pour j de i+1 à n
+      Si t[j] < t[min] alors
+        min = j
+    Fin pour
+    Si min ≠ i alors
+      echanger(t[i], t[min])
+  fin pour
+fin fonction

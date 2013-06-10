@@ -1,0 +1,7 @@
+Fonction factorielle(n)
+	r = 1
+	Pour i de 1 jusqu'à n
+		r = r*i
+	Fin pour
+	Retourner r
+Fin fonction

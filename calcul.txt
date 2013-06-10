@@ -1,0 +1,36 @@
+Fonction lire_le_fichier_dentre(nom_fichier)
+  progres = 0
+  t = Taille(nom_fichier)
+  Ouvrir(nom_fichier)
+  Tant que progres <= t
+    contenu = Lire(nom_fichier)
+    ajoute_tableau(contenu)
+    progres += Taille(contenu)
+  Fin tant que
+  Fermer(fichier)
+  Retourner tableau
+Fin fonction
+
+Fonction calculer_la_complexite(tableau)
+  complexite = nouveau_tableau
+  Pour i de 1 à n
+    ligne = tableau[i]
+    Si ligne = une instruction valide
+      complexite = complexite + "Ti"
+    Fin si
+  Fin pour
+  Retourner complexite
+Fonction
+
+Fonction afficher_complexite(complexite)
+  c = ""
+  n = taille(complexite)
+  Pour i de 1 à n
+    c = c + complexite[i]
+  Fin pour
+  Ecrire "La complexite de cette algorithme est :"
+  Ecrire c
+Fin fonction
+
+algorithme = lire_le_fichier_dentre(nom_fichier)
+afficher_complexite(calculer_la_complexite(algorithme))

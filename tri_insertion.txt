@@ -1,0 +1,12 @@
+Fonction tri_insertion(tableau t)
+  n = taille(t)
+  Pour i de 2 à n
+    x = t[i]
+    j = i
+    Tant que j>1 et t[j-1]>x
+      t[j] = t[j-1]
+      j = j - 1
+    Fin tant que
+    t[j] = x
+ Fin pour
+Fin fonction

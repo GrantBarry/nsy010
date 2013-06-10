@@ -1,0 +1,12 @@
+Fonction tri_à_bulles(tableau t)
+  n = taille(t)
+  inverti = Faux
+  Tant que inverti ≠ Vrai
+    Pour i de 1 jusqu'à n
+      Si t[i-1] > t[i] alors
+        invertir(t[i-1], t[i])
+        inverti = Vrai
+      Fin si
+    Fin pour
+  Fin tant que
+Fin fonction
